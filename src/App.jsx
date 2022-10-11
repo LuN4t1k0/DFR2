@@ -1,16 +1,20 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import AppProvider from "./context/AppContext";
+import Details from "./pages/Details";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Pizza from "./pages/Pizza";
 
 function App() {
   return (
     <>
       <AppProvider>
         <Routes>
-          <Route path="/"element={""} />
-          <Route path="pizza" element={""} />
-          <Route path="pizza:id" element={""} />
-          <Route path="*" element={""} />
+          <Route path="/"element={<Home/>} />
+          <Route path="pizza" element={<Pizza/>} />
+          <Route path="pizza:id" element={<Details/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </AppProvider>
     </>
