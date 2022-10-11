@@ -1,14 +1,10 @@
-import React, { createContext, useState } from 'react'
-export const AppContext = createContext()
+import React, { createContext } from "react";
+import useFetch from "../hooks/useFetch";
+export const AppContext = createContext();
 
-const AppProvider = ({children}) => {
-  const [carro, setCarro] = useState([])
-  const [ingrediente, setIngrediente] = useState([])
-  return (
-    <AppContext.Provider value={{}}>
-      {children}
-    </AppContext.Provider>
-  )
-}
+const AppProvider = ({ children }) => {
+  const data = useFetch("/pizzas.json");
+  return <AppContext.Provider value={{ data }}>{children}</AppContext.Provider>;
+};
 
-export default AppProvider
+export default AppProvider;
