@@ -1,8 +1,11 @@
 import React from 'react'
+import MyGallery from '../components/MyGallery'
 
 function Home() {
   return (
-    <div>Home</div>
+    <>
+    <MyGallery/>
+    </>
   )
 }
 
