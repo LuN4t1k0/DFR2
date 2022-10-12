@@ -9,7 +9,7 @@ const MyNavBar = () => {
     <div><NavLink>Home</NavLink></div>
     <div><NavLink>Home</NavLink></div>
   </div>
-  <div className="derecha">cart</div>
+  <div className="derecha"><i class="fa-solid fa-cart-shopping"></i></div>
 </nav>
   )
 }
