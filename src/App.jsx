@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import MyNavBar from "./components/MyNavBar";
 import AppProvider from "./context/AppContext";
 import Details from "./pages/Details";
 import Home from "./pages/Home";
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <AppProvider>
+        <MyNavBar/>
         <Routes>
           <Route path="/"element={<Home/>} />
           <Route path="pizza" element={<Pizza/>} />
