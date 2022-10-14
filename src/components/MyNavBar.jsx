@@ -3,16 +3,16 @@ import { NavLink } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 const MyNavBar = () => {
-const {cart} = useContext(AppContext)
+  const { cart } = useContext(AppContext);
   return (
     <nav className="flex justify-between text-white bg-black w-full h-20 items-center p-5">
       <div className="izquierda">Pizzeria Mamma Mia!</div>
       <div className="flex justify-around sm:w20 w-60 centro">
         <div>
-          <NavLink>Home</NavLink>
+          <NavLink to={"/"}>Home</NavLink>
         </div>
         <div>
-          <NavLink>Home</NavLink>
+          <NavLink to={"pizza"}>Pizzas</NavLink>
         </div>
       </div>
       <div className="derecha">
