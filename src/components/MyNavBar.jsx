@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 const MyNavBar = () => {
+const {cart} = useContext(AppContext)
   return (
     <nav className="flex justify-between text-white bg-black w-full h-20 items-center p-5">
       <div className="izquierda">Pizzeria Mamma Mia!</div>

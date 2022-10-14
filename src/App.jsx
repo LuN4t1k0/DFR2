@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/"element={<Home/>} />
           <Route path="pizza" element={<Pizza/>} />
-          <Route path="pizza:id" element={<Details/>} />
+          <Route path="pizza/:id" element={<Details/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
       </AppProvider>
