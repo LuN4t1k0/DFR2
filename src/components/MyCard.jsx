@@ -1,8 +1,9 @@
+
 import React from "react";
 import "../assets/css/card.css";
+import MyButton from "./MyButton";
 
-
-const MyCard = ({id,name, img, price,ingredients, }) => {
+const MyCard = ({id,name, img, price,ingredients, searchPizza}) => {
   
   return (
    <>
@@ -22,9 +23,8 @@ const MyCard = ({id,name, img, price,ingredients, }) => {
       <h2>{price}</h2>
     </div>
     <div className="buttons">
-      <button id={id} onClick={""}>Ver Mas</button>
-      <button id={id} onClick={""}>Agregar</button>
-      
+      <MyButton id={id} text={"ver mas "} action ={searchPizza}/>
+      <MyButton text={"Agregar"}/>
 
     </div>
    </div>
@@ -33,5 +33,3 @@ const MyCard = ({id,name, img, price,ingredients, }) => {
 };
 
 export default MyCard;
-
-

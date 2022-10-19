@@ -15,6 +15,13 @@ const PizzasProvider = ({ children }) => {
     getPizzas();
   }, []);
 
+
+  const searchPizza = (e) => {
+    e.preventDefault();
+    navigate(`pizza/${e.target.id}`);
+  };
+
+
   //Funciones para el carrito
 
   const addToCart = ({ id, price, name, img }) => {
