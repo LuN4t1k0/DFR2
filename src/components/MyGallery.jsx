@@ -5,7 +5,7 @@ import { AppContext } from "../context/AppContext";
 import MyCard from "./MyCard";
 
 const MyGallery = () => {
-  const { data, searchPizza } = useContext(AppContext);
+  const { data, searchPizza, addToCart } = useContext(AppContext);
   return (
     <>
       <div className="wrapper">
@@ -17,6 +17,7 @@ const MyGallery = () => {
             price={item.price}
             ingredients={item.ingredients}
             searchPizza={searchPizza}
+            addToCart={addToCart}
             id={item.id}
           />
         ))}

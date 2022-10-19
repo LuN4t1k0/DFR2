@@ -3,7 +3,7 @@ import React from "react";
 import "../assets/css/card.css";
 import MyButton from "./MyButton";
 
-const MyCard = ({id,name, img, price,ingredients, searchPizza}) => {
+const MyCard = ({id,name, img, price,ingredients, searchPizza, addToCart}) => {
   
   return (
    <>
@@ -23,8 +23,9 @@ const MyCard = ({id,name, img, price,ingredients, searchPizza}) => {
       <h2>{price}</h2>
     </div>
     <div className="buttons">
+      <button id={id} onClick={(e) => {addToCart(e.target.id)}}>Agregar</button>
       <MyButton id={id} text={"ver mas "} action ={searchPizza}/>
-      <MyButton text={"Agregar"}/>
+     
 
     </div>
    </div>
