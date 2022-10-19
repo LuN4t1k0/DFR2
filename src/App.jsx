@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import MyNavBar from "./components/MyNavBar";
 import AppProvider from "./context/AppContext";
+import Cart from "./pages/Cart";
 import Details from "./pages/Details";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -17,7 +18,7 @@ function App() {
           <Route path="/"element={<Home/>} />
           <Route path="pizza" element={<Pizza/>} />
           <Route path="pizza/:id" element={<Details/>} />
-          <Route path="carro" element={ <h1>Carro</h1> } />
+          <Route path="carro" element={ <Cart/> } />
 
           <Route path="*" element={<NotFound/>} />
         </Routes>

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 const MyNavBar = () => {
-  const { cart, total, count } = useContext(AppContext);
+  const { total, count } = useContext(AppContext);
   return (
     <nav className="flex justify-between text-white bg-black w-full h-20 items-center p-5">
       <div className="izquierda">Pizzeria Mamma Mia!</div>

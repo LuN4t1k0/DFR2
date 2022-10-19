@@ -86,7 +86,8 @@ const AppProvider = ({ children }) => {
         countItemIntoCart,
         total,
         emptyCart,
-        searchPizza
+        searchPizza,
+        cart
       }}
     >
       {children}

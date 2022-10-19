@@ -3,8 +3,13 @@ import { AppContext } from '../context/AppContext'
 
 const Cart = () => {
  const {cart} = useContext(AppContext)
+ console.log(cart)
   return (
-    <div>Cart</div>
+  <>
+    {cart.map(item => <div></div> )}
+  </>
+  
+
   )
 }
 
