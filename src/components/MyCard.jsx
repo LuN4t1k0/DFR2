@@ -1,8 +1,8 @@
 import React from "react";
 import "../assets/css/card.css";
-import MyButton from "./MyButton";
 
-const MyCard = ({id,name, img, price,ingredients, searchPizza}) => {
+
+const MyCard = ({id,name, img, price,ingredients, }) => {
   
   return (
    <>
@@ -22,8 +22,9 @@ const MyCard = ({id,name, img, price,ingredients, searchPizza}) => {
       <h2>{price}</h2>
     </div>
     <div className="buttons">
-      <MyButton id={id} text={"ver mas "} action ={searchPizza}/>
-      <MyButton text={"Agregar"}/>
+      <button id={id} onClick={""}>Ver Mas</button>
+      <button id={id} onClick={""}>Agregar</button>
+      
 
     </div>
    </div>

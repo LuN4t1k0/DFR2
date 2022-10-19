@@ -5,7 +5,8 @@ import { AppContext } from "../context/AppContext";
 import MyCard from "./MyCard";
 
 const MyGallery = () => {
-  const { data, searchPizza } = useContext(AppContext);
+  const { data, searchPizza} = useContext(AppContext);
+
   return (
     <>
       <div className="wrapper">
@@ -18,9 +19,10 @@ const MyGallery = () => {
             ingredients={item.ingredients}
             searchPizza={searchPizza}
             id={item.id}
+            add={addToCart} 
           />
         ))}
-        {console.log(data)}
+        
       </div>
     </>
   );

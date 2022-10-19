@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Pizza from "./pages/Pizza";
 
 function App() {
+ 
   return (
     <>
       <AppProvider>
