@@ -8,7 +8,7 @@ const useFetch = (URL) => {
         const request = await fetch(URL);
         const response = await request.json();
         setData(response);
-        // console.log(response)
+  
       } catch (error) {
         console.error(error);
       }

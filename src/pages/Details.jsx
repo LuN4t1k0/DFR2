@@ -7,7 +7,7 @@ const Details = () => {
   const { data } = useContext(AppContext);
   const filtro = data.find((item) => item.id === id);
 
-  console.log(filtro);
+  
 
   return (
     <>

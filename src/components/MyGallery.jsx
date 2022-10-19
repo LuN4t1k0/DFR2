@@ -21,7 +21,6 @@ const MyGallery = () => {
             id={item.id}
           />
         ))}
-        {console.log(data)}
       </div>
     </>
   );
