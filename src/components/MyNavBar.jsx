@@ -18,10 +18,11 @@ const MyNavBar = () => {
       <div className="derecha">
         <div className="cantidad">{count}</div>
         <div className="carro">
-          <i className=" fa-solid fa-cart-shopping"></i>
+         <NavLink to={"carro"}><i className="fa-solid fa-cart-shopping"></i></NavLink>
+          
         </div>
         <div className="total">
-          <h3>{total}</h3>
+          <h3>${total}</h3>
         </div>
       </div>
     </nav>
