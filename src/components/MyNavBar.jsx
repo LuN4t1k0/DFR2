@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 const MyNavBar = () => {
-  const { cart } = useContext(AppContext);
+  const { cart, total, count } = useContext(AppContext);
   return (
     <nav className="flex justify-between text-white bg-black w-full h-20 items-center p-5">
       <div className="izquierda">Pizzeria Mamma Mia!</div>
@@ -16,12 +16,12 @@ const MyNavBar = () => {
         </div>
       </div>
       <div className="derecha">
-        <div className="cantidad">2</div>
+        <div className="cantidad">{count}</div>
         <div className="carro">
           <i className=" fa-solid fa-cart-shopping"></i>
         </div>
         <div className="total">
-          <h3>Total : $18.500 </h3>
+          <h3>{total}</h3>
         </div>
       </div>
     </nav>
